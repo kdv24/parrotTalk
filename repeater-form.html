@@ -2,20 +2,30 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <title>String Repeating</title>
+    <title>String Games</title>
 </head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
     <div class="container">
-        <h1>Hi! I'm a parrot website. I'll repeat back what you say!</h1>
+        <h1>String Games.</h1>
+        <h3>Give me some words and let's have some fun!</h3>
         <form action="repeater.php">
             <div class="form-group">
-                <label for="repeat_text">What would you like me to say?</label>
-                <input id="repeat_text" name="repeat_text" class="form-control" type="text">
+                <label for="string1">What is your first word for the game?</label>
+                <input id="string1" name="string1" class="form-control" type="text">
             </div>
             <div class="form-group">
-                <label for="number_of_repeats">How many times should I say it?</label>
-                <input id="number_of_repeats" name="number_of_repeats" class="form-control" type="text">
+                <label for="string2">...and your second?</label>
+                <input id="string2" name="string2" class="form-control" type="text">
             </div>
+            <div class="form-group">
+                <label for="string3">What is your third word going to be?</label>
+                <input id="string3" name="string3" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="string4">And, finally, what's your last word?</label>
+                <input id="string4" name="string4" class="form-control" type="text">
+            </div>  
             <button type="submit" class="btn-success">Submit</button>
         </form>
     </div>
